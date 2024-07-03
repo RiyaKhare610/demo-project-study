@@ -1,0 +1,76 @@
+/* wizard.css */
+
+/* Style the form container */
+form {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/* Center align the heading */
+h1 {
+    text-align: center;
+}
+
+/* Style the steps */
+.step {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #aaa;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+/* Style the active step */
+.step.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Style the tabs */
+.tab {
+    display: none;
+    padding-top: 20px;
+}
+
+/* Style the input fields and error messages */
+.inp {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+}
+
+/* Style the index buttons */
+.index-btn-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.index-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.index-btn:hover {
+    background-color: #45a049;
+}
+
+.index-btn:active {
+    background-color: #3e8e41;
+}
