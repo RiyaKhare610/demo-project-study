@@ -1,0 +1,20 @@
+<?php
+include 'db.php';
+
+
+$sql = "SELECT profile_picture FROM upload";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    echo "<h3>Uploaded Image Names:</h3>";
+    echo "<ul>";
+    while($row = $result->fetch_assoc()) {
+        echo "<li>" . htmlspecialchars($row['profile_picture']) . "</li>";
+    }
+    echo "</ul>";
+} else {
+    echo "No images found.";
+}
+
+$conn->close();
+?>
